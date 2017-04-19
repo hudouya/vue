@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="demo">
+
+</div>
+<script src="vue.js"></script>
+<script>
+    let obj={
+
+
+    };
+    var vm=new Vue({
+        el:"#demo",
+        data:obj,
+        render(createElement){
+            return createElement(
+                   "ul",
+                    [
+                      createElement("li",1),
+                      createElement("li",2),
+                      createElement("li",3)
+                    ]
+            );
+    }
+    })
+</script>
+</body>
+</html>
